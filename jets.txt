@@ -1,0 +1,8 @@
+Passenger,Fokker 70,586,1684,20000
+Cargo,Boxcar,290,2280,59000
+Fighter,Hurricane,340,600,18000
+Paper,Newspaper,1,1,1
+Paper,Mache,2,1,5
+Fighter,Falcon,150,1500,35000
+Passenger,Blackhawk,172,368,59000
+Cargo,Chinook,188,378,35000
