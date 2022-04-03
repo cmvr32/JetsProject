@@ -85,15 +85,15 @@ public class AirField {
 	public void addJet(AirField af, ArrayList<Jet> theFleet, Scanner sc) {
 
 		System.out.println("");
-		System.out.println("===================== Pick a Jet Model to Add =================");
-		System.out.println("=                                                             =");
-		System.out.println("=                       1. Passenger                          =");
-		System.out.println("=                       2. Cargo                              =");
-		System.out.println("=                       3. Fighter                            =");
-		System.out.println("=                       4. Paper Plane                        =");
-		System.out.println("=                       5. Go back                            =");
-		System.out.println("=                                                             =");
-		System.out.println("===============================================================");
+		System.out.println("======================= Pick a Jet Model to Add ===================");
+		System.out.println("=                                                                 =");
+		System.out.println("=                         1. Passenger                            =");
+		System.out.println("=                         2. Cargo                                =");
+		System.out.println("=                         3. Fighter                              =");
+		System.out.println("=                         4. Paper Plane                          =");
+		System.out.println("=                         5. Go back                              =");
+		System.out.println("=                                                                 =");
+		System.out.println("===================================================================");
 		System.out.println("");
 
 		int type = sc.nextInt();
@@ -104,13 +104,14 @@ public class AirField {
 			String model = sc.next();
 			System.out.print("Enter the speed in MPH: ");
 			double speed = sc.nextDouble();
-			System.out.print("Please enter the range in miles: ");
+			
+			System.out.print("Please enter 6the range in miles: ");
 			int range = sc.nextInt();
 			System.out.print("Please enter the cost: $");
 			long price = sc.nextLong();
+			System.out.println("\nYour new Passenger jet has been added to the fleet!");
 
 			Passenger newPassenger = new Passenger(model, speed, range, price);
-			System.out.println(newPassenger);
 			theFleet.add(newPassenger);
 			break;
 
@@ -123,6 +124,8 @@ public class AirField {
 			range = sc.nextInt();
 			System.out.print("Please enter the cost: $");
 			price = sc.nextLong();
+			System.out.println("\nYour new Cargo jet has been added to the fleet!");
+
 
 			Cargo newCargo = new Cargo(model, speed, range, price);
 			theFleet.add(newCargo);
@@ -137,6 +140,8 @@ public class AirField {
 			range = sc.nextInt();
 			System.out.print("Please enter the cost: $");
 			price = sc.nextLong();
+			System.out.println("\nYour new Fighter jet has been added to the fleet!");
+
 
 			Cargo newFighter = new Cargo(model, speed, range, price);
 			theFleet.add(newFighter);
@@ -151,6 +156,8 @@ public class AirField {
 			range = sc.nextInt();
 			System.out.print("Please enter the cost: $");
 			price = sc.nextLong();
+			System.out.println("\nYour new Paper jet has been added to the fleet!");
+
 
 			Paper newPaper = new Paper(model, speed, range, price);
 			theFleet.add(newPaper);
