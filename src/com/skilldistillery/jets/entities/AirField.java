@@ -69,13 +69,13 @@ public class AirField {
 			jet.fly();
 		}
 	}
-	
+
 	public void cargoMission() {
 		for (Jet jet : theFleet) {
 			jet.loadCargo();
 		}
 	}
-	
+
 	public void combatReady() {
 		for (Jet jet : theFleet) {
 			jet.combatReady();
@@ -104,7 +104,7 @@ public class AirField {
 			String model = sc.next();
 			System.out.print("Enter the speed in MPH: ");
 			double speed = sc.nextDouble();
-			
+
 			System.out.print("Please enter 6the range in miles: ");
 			int range = sc.nextInt();
 			System.out.print("Please enter the cost: $");
@@ -126,7 +126,6 @@ public class AirField {
 			price = sc.nextLong();
 			System.out.println("\nYour new Cargo jet has been added to the fleet!");
 
-
 			Cargo newCargo = new Cargo(model, speed, range, price);
 			theFleet.add(newCargo);
 			break;
@@ -142,7 +141,6 @@ public class AirField {
 			price = sc.nextLong();
 			System.out.println("\nYour new Fighter jet has been added to the fleet!");
 
-
 			Cargo newFighter = new Cargo(model, speed, range, price);
 			theFleet.add(newFighter);
 			break;
@@ -157,7 +155,6 @@ public class AirField {
 			System.out.print("Please enter the cost: $");
 			price = sc.nextLong();
 			System.out.println("\nYour new Paper jet has been added to the fleet!");
-
 
 			Paper newPaper = new Paper(model, speed, range, price);
 			theFleet.add(newPaper);

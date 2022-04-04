@@ -3,8 +3,8 @@ package com.skilldistillery.jets.entities;
 public class Cargo extends Jet {
 
 	public void fly() {
-		System.out.println("Whap Whop Whap --- I'm a " + getModel() + " Cargo jet! " + "I fly for " + Math.round(getRange() / getSpeed())
-				+ " hours before I run out of fuel. \n");
+		System.out.println("Whap Whop Whap --- I'm a " + getModel() + " Cargo jet! " + "I fly for "
+				+ Math.round(getRange() / getSpeed()) + " hours before I run out of fuel. \n");
 
 	}
 

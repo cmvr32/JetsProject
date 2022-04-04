@@ -55,7 +55,7 @@ public abstract class Jet {
 	}
 
 	public long getPrice() {
-		return price;
+		return price; 
 	}
 
 	public void setPrice(long price) {
